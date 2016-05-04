@@ -1,6 +1,6 @@
 (function (window) {
   'use strict';
-
+var time, counter, currentTime;
   /* Q&A object-array */
   var questionBank = [
     { QobjectIndexer: 0, question: "Who is the writer of Lord of the Rings and founding father of the Middle-Earth Saga?", answer: "J.R.R. Tolkien" },
@@ -42,5 +42,20 @@ function questionnaire(questionAnswerArray, choicesArray) {
   }
 }
 questionnaire(questionBank, wrongChoices);
+
+/* time-converter based on class example */
+function timeConverter(t) {
+  var minutes = Math.floor(t / 60);
+  var seconds = t - (minutes * 60);
+  if (seconds < 10) {
+    seconds = "0" + seconds;
+  }
+  if (minutes === 0) {
+    minutes = "00";
+  } else if (minutes < 10) {
+    minutes = "0" + minutes;
+  }
+  return minutes + ":" + seconds;
+}
 
 })(window);
