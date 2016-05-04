@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- browser-sync start --server --directory --files='index.html, assets/stylesheets/styles.css, assets/scripts/trivia.js' -->
 
 <head>
   <meta charset="utf-8">
@@ -9,17 +10,43 @@
   <meta name="description" content="Lord of the Rings Trivia Game">
   <meta name="author" content="BFGriffith">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=MedievalSharp&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <link href="assets/stylesheets/styles.css" rel="stylesheet" type="text/css">
   <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
+  <audio src="assets/sounds/BridgeOfKhazadDum.mp3" autoplay loop></audio>
   <div class="container">
     <div class="row">
-      <div class="col-xs-12">
-      </div>
-    </div>
-  </div>
+      <div class="col-xs-2"></div>
+
+      <div class="col-xs-8" id="content">
+
+        <div class="row">
+          <h1 class="col-xs-12" id="titleHeader">Middle Earth<br>Trivia Game</h1>
+        </div>
+        <div class="row" id="timer">
+          <div class="row">
+            <div class="col-xs-12" id="timerDisplay">00:00</div>
+          </div>
+          <div class="row" id="buttons">
+            <button class="col-xs-4" id="start">Start</button>
+            <button class="col-xs-4" id="stop">Stop</button>
+            <button class="col-xs-4" id="reset">Reset</button>
+          </div>
+        </div><!--END-timer-->
+        <div class="row">
+          <form class="col-xs-12" id="questionBox"></form>
+          <div class="col-xs-12" id="feedback"></div>
+        </div>
+
+      </div><!--END-content-->
+
+      <div class="col-xs-2"></div>
+    </div><!--END-containerRow-->
+  </div><!--END-container-->
+
   <script src="assets/scripts/trivia.js"></script>
 </body>
 
