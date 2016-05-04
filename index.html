@@ -10,6 +10,7 @@
   <meta name="description" content="Lord of the Rings Trivia Game">
   <meta name="author" content="BFGriffith">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=MedievalSharp&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <link href="assets/stylesheets/styles.css" rel="stylesheet" type="text/css">
   <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
 </head>
@@ -19,8 +20,12 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-2"></div>
+
       <div class="col-xs-8" id="content">
 
+        <div class="row">
+          <h1 class="col-xs-12" id="titleHeader">Middle Earth<br>Trivia Game</h1>
+        </div>
         <div class="row" id="timer">
           <div class="row">
             <div class="col-xs-12" id="timerDisplay">00:00</div>
@@ -30,16 +35,17 @@
             <button class="col-xs-4" id="stop">Stop</button>
             <button class="col-xs-4" id="reset">Reset</button>
           </div>
+        </div><!--END-timer-->
+        <div class="row">
+          <form class="col-xs-12" id="questionBox"></form>
         </div>
-        <!--END-timer-->
 
+      </div><!--END-content-->
 
-      </div>
-      <!--END-content-->
       <div class="col-xs-2"></div>
-    </div>
-  </div>
-  <!--END-container-->
+    </div><!--END-containerRow-->
+  </div><!--END-container-->
+
   <script src="assets/scripts/trivia.js"></script>
 </body>
 
