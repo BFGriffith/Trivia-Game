@@ -1,1 +1,62 @@
 * { text-decoration: none; }
+html {
+  background: url(/assets/images/Middle-Earth_realm.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body { background-color: transparent; }
+#titleHeader {
+  font-family: 'MedievalSharp', cursive;
+  text-align: center;
+  color: #008000;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+#timer{
+  width: 275px;
+  text-align: center;
+  margin: 10px auto 10px auto;
+  background-color: transparent !important;
+}
+#timerDisplay{
+  background: black;
+  color:green;
+  font-size: 3em;
+  font-family: monospace;
+  text-align: center;
+  border-radius: 5px;
+}
+#buttons{
+  text-align: center;
+  display: block;
+  clear: both;
+  margin-top: 10px;
+}
+button{
+  border-radius: 10px;
+}
+#questionBox {
+  background-color: #C0C0C0;
+  opacity: 0.8;
+  border-radius: 5px;
+  text-align: left;
+}
+#questionBox input {
+  color: black;
+  padding: 5px;
+}
+#question {
+  text-align: justify;
+}
