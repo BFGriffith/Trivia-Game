@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- browser-sync start --server --directory --files='index.html, assets/stylesheets/styles.css, assets/scripts/trivia.js' -->
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,20 +16,30 @@
 
 <body>
   <audio src="assets/sounds/BridgeOfKhazadDum.mp3" autoplay loop></audio>
-  <div id="timer">
-    <div id="timerDisplay">00:00</div>
-    <div id="buttons">
-      <button id="start">Start</button>
-      <button id="stop">Stop</button>
-      <button id="reset">Reset</button>
-    </div>
-  </div>
   <div class="container">
     <div class="row">
-      <div class="col-xs-12">
+      <div class="col-xs-2"></div>
+      <div class="col-xs-8" id="content">
+
+        <div class="row" id="timer">
+          <div class="row">
+            <div class="col-xs-12" id="timerDisplay">00:00</div>
+          </div>
+          <div class="row" id="buttons">
+            <button class="col-xs-4" id="start">Start</button>
+            <button class="col-xs-4" id="stop">Stop</button>
+            <button class="col-xs-4" id="reset">Reset</button>
+          </div>
+        </div>
+        <!--END-timer-->
+
+
       </div>
+      <!--END-content-->
+      <div class="col-xs-2"></div>
     </div>
   </div>
+  <!--END-container-->
   <script src="assets/scripts/trivia.js"></script>
 </body>
 

@@ -1,6 +1,6 @@
 * { text-decoration: none; }
 html {
-  background: url(/assets/images/Middle-Earth_MAP.jpg) no-repeat center center fixed;
+  background: url(/assets/images/Middle-Earth_realm.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8,8 +8,9 @@ html {
 }
 body { background-color: transparent; }
 #timer{
-  width: 300px;
-  margin: 50px auto 0;
+  width: 275px;
+  text-align: center;
+  margin: 50px auto 10px auto;
   background-color: transparent !important;
 }
 #timerDisplay{
@@ -18,11 +19,16 @@ body { background-color: transparent; }
   font-size: 3em;
   font-family: monospace;
   text-align: center;
+  border-radius: 5px;
 }
 #buttons{
   text-align: center;
+  display: block;
+  clear: both;
+  margin-top: 10px;
 }
 button{
-  height:50px;
-  width:75px;
+  /*height:50px;
+  width:75px;*/
+  border-radius: 10px;
 }
