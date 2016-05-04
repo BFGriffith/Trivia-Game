@@ -58,4 +58,21 @@ function timeConverter(t) {
   return minutes + ":" + seconds;
 }
 
+//timer for questionBox
+$(document).ready(function() {
+  setTimeout(function() {
+    alert('Welcome to the Shire, traveler. Concerning hobbits, to gain entry you must test your knowledge of Middle Earth. Once you clear this message, your Riddles in the Dark will begin! All we have to decide is what to do with the time that is given us.');
+  }, 1000);
+  time = 600;
+  $("#timerDisplay").html("05:00");
+
+  function clockView() {
+    time--;
+    currentTime = timeConverter(time);
+    $("#timerDisplay").html(currentTime);
+    // console.log(time);
+  };
+  counter = setInterval(clockView, 1000);
+})
+
 })(window);
