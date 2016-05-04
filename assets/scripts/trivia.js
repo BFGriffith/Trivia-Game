@@ -17,4 +17,30 @@
     ["Denethor", "Thrain", "Eorl"]
   ]
 
+  /* randomize-choices */
+  function randomizeChoices(array) {
+    for (var r = array.length - 1; r >= 0; r--) {
+      var randomIndex = Math.floor(Math.random() * r + 1);
+      var itemAtIndex = array[randomIndex];
+      array[randomIndex] = array[r];
+      array[r] = itemAtIndex;
+    }
+    return array;
+  }
+
+/* question formBuilder */
+function questionnaire(questionAnswerArray, choicesArray) {
+  for (var i = 0; i < 4; i++) {
+    choicesArray[i].push(questionAnswerArray[i].answer);
+    $('#questionBox').append("<br><p id=" + "question" + i + ">" + questionAnswerArray[i].question + "</p>");
+    choicesArray[i] = randomizeChoices(choicesArray[i]);
+    console.log(choicesArray[i]);
+    for (var c = 0; c < choicesArray[i].length; c++) {
+      console.log(choicesArray[i][c]);
+      $('#questionBox').append("<input type=" + "radio" + " name=" + "question" + i + " value=" + "\"" + choicesArray[i][c] + "\"" + " id=" + "question" + i + "> " + choicesArray[i][c] + "</input><br>");
+    }
+  }
+}
+questionnaire(questionBank, wrongChoices);
+
 })(window);

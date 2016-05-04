@@ -47,3 +47,16 @@ body { background-color: transparent; }
 button{
   border-radius: 10px;
 }
+#questionBox {
+  background-color: #C0C0C0;
+  opacity: 0.8;
+  border-radius: 5px;
+  text-align: left;
+}
+#questionBox input {
+  color: black;
+  padding: 5px;
+}
+#question {
+  text-align: justify;
+}
